@@ -1,19 +1,272 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta name="description" content="A web portfolio for Hunter McNeil to display personal and professional work.">
-        <link rel="stylesheet" href="style.css">
-        <title>Hello Hunter</title>
-    </head>
-    <body class="App">
-      <header class="App-header">
-        <h1>Under Construction :)</h1>
-        <div class="App-link">
-          <a href="mailto:huntermcneil041@gmail.com">Contact</a>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="Portfolio" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://kit.fontawesome.com/0568f58b55.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./assets/css/styles.css" />
+    <title>Hunter McNeil</title>
+  </head>
+  <body class="dark" id="top">
+    <header class="header center">
+      <h3>
+        <a href="#" class="link">HM</a>
+      </h3>
+      <nav class="nav center">
+        <ul class="nav__list center">
+          <li class="nav__list-item">
+            <a class="link link--nav" href="/HunterMcNeil-Resume.pdf">Resume</a>
+          </li>
+          <li class="nav__list-item">
+            <a class="link link--nav" href="#contact">Contact</a>
+          </li>
+        </ul>
+        <button
+          type="button"
+          aria-label="toggle navigation"
+          class="btn btn--icon nav__hamburger"
+        >
+          <i aria-hidden="true" class="fas fa-bars"></i>
+        </button>
+      </nav>
+    </header>
+
+    <main>
+      <!-- About -->
+      <div class="about center">
+        <h1 class="push__up"><span class="about__name">Hunter McNeil</span></h1>
+        <h2 class="about__role">Technology Enthusiast</h2>
+        <p class="about__desc">
+          I’m passionate about creating <b>functional</b> and <b>appealing</b> websites and I focus on writing clean and efficient code.
+        </p>
+
+        <div class="about__contact center">
+          <a href="#projects">
+            <span class="btn btn--outline">Projects</span>
+          </a>
         </div>
-      </header>
-    </body>
+      </div>
+      <div class ="gradient"></div>
+
+      <!-- Projects -->
+      <section id="projects" class="section projects">
+        <h2 class="section__title">Featured Projects</h2>
+        <div class="projects__grid">
+
+          <div class="project">
+            <div class="project__image__container">
+              <img class="project__image" alt="test" src="./assets/img/hamroad.png">
+            </div>
+            <div class="description__container">
+              <h3>Hamilton Road BIA</h3>
+              <p class="project__description">
+                My tasks for this site are automating the blog posts and overhauling the front-end.
+                I cannot show the code as it belongs to the BIA.
+              </p>
+              <ul class="project__stack">
+                <li class="project__stack-item">WordPress</li>
+                <li class="project__stack-item">PHP</li>
+                <li class="project__stack-item">Divi</li>
+                <li class="project__stack-item">Figma</li>
+              </ul>
+              <div class="btn__container">
+                <a
+                href="https://www.hamroad.com/"
+                target="_blank"
+                aria-label="live preview"
+                class="btn__card btn--outline"
+                >
+                  Live Demo
+                </a>
+
+                <a
+                  href="#"
+                  target="_blank"
+                  aria-label="source code"
+                  class="btn__card disabled"
+                  >
+                  Code Unavailable
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="project">
+            <div class="project__image__container">
+              <img class="project__image" alt="test" src="./assets/img/hellohunter.png">
+            </div>
+            <div class="description__container">
+              <h3>Portfolio Site</h3>
+              <p class="project__description">
+                A new portfolio site to display my most recent works, as well as practice my design skills and prototyping skills with Figma.
+              </p>
+              <ul class="project__stack">
+                <li class="project__stack-item">HTML</li>
+                <li class="project__stack-item">CSS</li>
+                <li class="project__stack-item">JavaScript</li>
+                <li class="project__stack-item">Figma</li>
+              </ul>
+              <div class="btn__container">
+                <a
+                  href="https://hellohunter.dev"
+                  target="_blank"
+                  aria-label="live preview"
+                  class="btn__card btn--outline"
+                >
+                  Live Demo
+                </a>
+
+                <a
+                  href="https://github.com/Hoobntoobr/portfolio-2022"
+                  target="_blank"
+                  aria-label="source code"
+                  class="btn__card btn__hover"
+                >
+                  Code &lt;	/ &gt;
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="project">
+            <div class="project__image__container">
+              <img class="project__image" alt="test" src="./assets/img/gamefinder.PNG">
+            </div>
+            <div class="description__container">
+              <h3>MLB Game Finder</h3>
+              <p class="project__description">
+                An attempt to make an MLB style site. Made with the bulma framework, 
+                and card generation with javascript.
+              </p>
+              <ul class="project__stack">
+                <li class="project__stack-item">HTML</li>
+                <li class="project__stack-item">Bulma</li>
+                <li class="project__stack-item">JavaScript</li>
+                <li class="project__stack-item">JSON</li>
+              </ul>
+              <div class="btn__container">
+                <a
+                  href="https://bejewelled-selkie-90ff60.netlify.app/"
+                  target="_blank"
+                  aria-label="live preview"
+                  class="btn__card btn--outline"
+                >
+                  Live Demo
+                </a>
+
+                <a
+                  href="https://github.com/Hoobntoobr/MLB-Game-Finder"
+                  target="_blank"
+                  aria-label="source code"
+                  class="btn__card btn__hover"
+                >
+                  Code &lt;	/ &gt;
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="project">
+            <div class="project__image__container">
+              <img class="project__image" alt="test" src="./assets/img/interrobang.PNG">
+            </div>
+            <div class="description__container">
+              <h3>Interrobang</h3>
+              <p class="project__description">
+                I brought over the database to the new frontend, as well as fixing bugs and adding features. 
+                I cannot show the code as it belongs to the student union.
+              </p>
+              <ul class="project__stack">
+                <li class="project__stack-item">HTML</li>
+                <li class="project__stack-item">JavaScript</li>
+                <li class="project__stack-item">PHP</li>
+                <li class="project__stack-item">SQL</li>
+              </ul>
+              <div class="btn__container">
+                <a
+                  href="https://www.theinterrobang.ca/"
+                  target="_blank"
+                  aria-label="live preview"
+                  class="btn__card btn--outline"
+                >
+                  Live Demo
+                </a>
+
+                <a
+                  href="#"
+                  target="_blank"
+                  aria-label="source code"
+                  class="btn__card disabled"
+                  >
+                  Code Unavailable
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <div class ="gradient__top"></div>
+
+      <!-- Contact -->
+      <section class="section contact center" id="contact">
+        <h2 class="section__title">Contact Me</h2>
+        <div class="contact__btn--container">
+          <a
+            href="mailto:huntermcneil041@gmail.com"
+            aria-label="email"
+            class="link link--icon"
+          >
+            <i aria-hidden="true" class="fa-solid fa-envelope"></i>
+          </a>
+            
+          <a
+            href="https://github.com/Hoobntoobr"
+            target="_blank"
+            aria-label="github"
+            class="link link--icon"
+          >
+            <i aria-hidden="true" class="fab fa-github"></i>
+          </a>
+    
+          <a
+            href="https://www.linkedin.com/in/hunter-mcneil-202916200/"
+            target="_blank"
+            aria-label="linkedin"
+            class="link link--icon"
+          >
+            <i aria-hidden="true" class="fab fa-linkedin"></i>
+          </a>
+        </div>
+      </section>
+      <div class ="gradient"></div>
+    </main>
+
+    <footer class="footer">
+      <a
+        href="https://github.com/Hoobntoobr/portfolio-2022"
+        target="_blank"
+        class="link footer__link"
+      > 
+      Hunter McNeil 2022
+      </a>
+    </footer>
+
+    <div class="scroll-container">
+      <div class="scroll-top">
+        <a aria-label="Scroll up" href="#top">
+          <i aria-hidden="true" class="fas fa-arrow-up"></i>
+        </a>
+      </div>
+    </div>
+
+    <script src="./assets/js/script.js"></script>
+  </body>
 </html>
