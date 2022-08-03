@@ -328,37 +328,32 @@ main {
 }
 
 .project {
-  display:grid;
-  transition: transform 0.2s linear;
+  display: grid;
   padding: 1em;
-  margin: 0.5em auto;
-  
-  
+  margin: 0.5em auto;  
   place-items: center center;
 }
 
-.project:hover {
-  transform: translateY(-7px);
-}
-
 .project__image__container {
-  border: 2px solid black;
   position: relative;
   width: 95%;
-  margin: 0 auto -2em auto;
+  margin: 0 auto -3em auto;
   z-index: 10;
-
-  /* TODO: Work on the angle for the project cards */
-  /* clip-path: polygon(0 0, 100% 0, 100% 98%, 0 85%); */
-  /* margin-right: -3em;
-  
-  border: 2px solid black; */
 }
 
 .project__image {
   width: 100%;
   filter: blur(3px);
   -webkit-filter: blur(3px);
+  transition: transform 0.2s linear, 0.25s filter linear;
+  -webkit-transition: transform 0.2s linear, 0.25s filter linear;
+  -moz-transition: transform 0.2s linear, 0.25s filter linear;
+  -o-transition: transform 0.2s linear, 0.25s filter linear;
+}
+
+.project__image:hover{
+  transform: translateY(-2em);
+  filter: blur(0);
 }
 
 .description__container {
@@ -368,11 +363,6 @@ main {
   z-index: 20;
   position: relative;
   padding: 1em;
-  /* width: 65%;
-  float: right;
-  text-align: left;
-  
-   */
 }
 
 .project__description {
